@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Matrix Love 💕</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="configScreen">
+    <h2>✨ Personalize seu carinho ✨</h2>
+    <label>
+      Nome do Autor:<br />
+      <input type="text" id="autorInput" aria-label="Nome do Autor" />
+    </label>
+    <br /><br />
+    <label>
+      Mensagem Secreta:<br />
+      <input type="text" id="msgSecretaInput" aria-label="Mensagem Secreta" />
+    </label>
+    <br /><br />
+    <label>
+      Apelidos (separados por vírgula):<br />
+      <textarea id="apelidosInput" rows="3" aria-label="Apelidos">
+Amor 💗, Querida 💞, Pessoa Especial 💕
+      </textarea>
+    </label>
+    <br /><br />
+    <label>
+      Palavra para mostrar no lugar de “Carinho”:<br />
+      <input type="text" id="palavraCarinhoInput" placeholder="Carinho" aria-label="Palavra Carinho" />
+    </label>
+    <br /><br />
+    <button onclick="iniciar()">Começar 💖</button>
+    <button id="resetButton" style="display:none; margin-top:10px;">Recomeçar carinho</button>
+    <button id="toggleRainbow" style="margin-top:10px;">Ativar modo arco-íris 🌈</button>
+  </div>
+
+  <div class="Love__You" id="love-container"></div>
+  <div class="timer" id="timer">Você está recebendo carinho há 0s</div>
+  <div class="last-visit" id="lastVisit"></div>
+  <div class="final-message">Com carinho, Nome do Autor</div>
+  <div class="secret" id="secret">Mensagem secreta</div>
+  <div class="fadeout" id="endScreen">Feito com carinho... por Nome do Autor 💗</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
